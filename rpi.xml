@@ -24,7 +24,7 @@
 
   <project
         path="layers/meta-marialinux"
-        name="meta-marialinux"
+        name="MariaLinux/meta-marialinux"
         remote="github"
         revision="main"
     />
