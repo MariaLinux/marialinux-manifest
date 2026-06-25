@@ -7,7 +7,7 @@
   <default revision="scarthgap" remote="yocto" sync-j="4" />
 
   <project path="layers/poky" name="poky" remote="yocto" revision="scarthgap">
-    <linkfile src="layers/poky/oe-init-build-env" dest="oe-init-build-env" />
+    <linkfile src="oe-init-build-env" dest="oe-init-build-env" />
   </project>
 
   <project
