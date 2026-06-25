@@ -1,0 +1,57 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "git-repo@latest": {
+      "last_modified": "2026-05-21T08:15:18Z",
+      "resolved": "github:NixOS/nixpkgs/4a29d733e8a7d5b824c3d8c958a946a9867b3eb2#git-repo",
+      "source": "devbox-search",
+      "version": "2.59",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nkc0d45j0m7kbr88cxf2bg9g0s91h6jx-git-repo-2.59",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nkc0d45j0m7kbr88cxf2bg9g0s91h6jx-git-repo-2.59"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9b1c02p19527rvk1kaax3fwzjkl9676p-git-repo-2.59",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9b1c02p19527rvk1kaax3fwzjkl9676p-git-repo-2.59"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/hf68i2ip68gkyfca7cjpkki269n5aq50-git-repo-2.59",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/hf68i2ip68gkyfca7cjpkki269n5aq50-git-repo-2.59"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rjll17hg17pzgsywq3xh7vmqvwx65apn-git-repo-2.59",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rjll17hg17pzgsywq3xh7vmqvwx65apn-git-repo-2.59"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-06-23T00:43:55Z",
+      "resolved": "github:NixOS/nixpkgs/89570f24e97e614aa34aa9ab1c927b6578a43775?lastModified=1782175435"
+    }
+  }
+}

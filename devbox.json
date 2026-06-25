@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.2/.schema/devbox.schema.json",
+  "packages": ["git-repo@latest"],
+  "shell": {
+    "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
+    "scripts": {
+      "init-repo": [
+        "mkdir -p workspace",
+        "cd workspace",
+        "repo init -u git@github.com:MariaLinux/marialinux-manifest.git",
+        "repo sync -j4"
+      ],
+      "init-docker": ["docker buildx build -t maria-builder:latest workspace"],
+      "build": [
+        "cd workspace",
+        "docker run --rm -v $(pwd):/workspace -w /workspace maria-builder:latest bash -c 'source layers/poky/oe-init-build-env build && bitbake maria-image'"
+      ],
+      "container": [
+        "docker run --rm -it -v $(pwd):/workspace -w /workspace maria-builder:latest /bin/bash"
+      ]
+    }
+  }
+}

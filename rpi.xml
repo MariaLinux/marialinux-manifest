@@ -6,9 +6,7 @@
   <remote name="github" fetch="https://github.com" />
   <default revision="scarthgap" remote="yocto" sync-j="4" />
 
-  <project path="layers/poky" name="poky" remote="yocto" revision="scarthgap">
-    <linkfile src="oe-init-build-env" dest="oe-init-build-env" />
-  </project>
+  <project path="layers/poky" name="poky" remote="yocto" revision="scarthgap" />
 
   <project
         path="layers/meta-openembedded"
