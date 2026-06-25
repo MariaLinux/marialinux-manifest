@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<manifest>
+
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git" />
+  <remote name="oe" fetch="https://git.openembedded.org" />
+  <remote name="github" fetch="https://github.com" />
+  <default revision="scarthgap" remote="yocto" sync-j="4" />
+
+  <project path="layers/poky" name="poky" remote="yocto" revision="scarthgap" />
+
+  <project
+        path="layers/meta-openembedded"
+        name="meta-openembedded"
+        remote="oe"
+        revision="scarthgap"
+    />
+
+  <project
+        path="layers/meta-raspberrypi"
+        name="meta-raspberrypi"
+        remote="yocto"
+        revision="scarthgap"
+    />
+
+  <project
+        path="layers/meta-marialinux"
+        name="meta-marialinux"
+        remote="github"
+        revision="main"
+    />
+</manifest>
