@@ -10,7 +10,7 @@
         "repo init -u git@github.com:MariaLinux/marialinux-manifest.git",
         "repo sync -j4"
       ],
-      "repo-sync": ["cd workspace", "repo sync -j4"],
+      "repo-sync": ["cd workspace", "repo sync -j1"],
       "init-docker": ["docker buildx build -t maria-builder:latest workspace"],
       "build": [
         "docker run --rm -v $(pwd)/workspace:/workspace -w /workspace maria-builder:latest bash -c 'source layers/poky/oe-init-build-env build && bitbake maria-image'"
